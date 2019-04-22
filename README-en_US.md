@@ -19,7 +19,7 @@
 
 Fast, concise, and powerful blogging system developed in Java.
 
-> QQ Group: 162747721，Telegram Group: [https://t.me/HaloBlog](https://t.me/HaloBlog) | Telegram Channel: [https://t.me/halo_dev](https://t.me/halo_dev) | [WeHalo 小程序](https://github.com/aquanlerou/WeHalo)。
+> QQ Group: [162747721](https://jq.qq.com/?_wv=1027&k=5YV6nk2)，Telegram Group: [https://t.me/HaloBlog](https://t.me/HaloBlog) | Telegram Channel: [https://t.me/halo_dev](https://t.me/halo_dev) | [WeHalo 小程序](https://github.com/aquanlerou/WeHalo)。
 
 ## Demo
 
@@ -28,16 +28,6 @@ Fast, concise, and powerful blogging system developed in Java.
 > username: admin,password: 123456
 
 ## Quick start
-
-Deploy with shell script：
-
-```bash
-# install Halo
-$ yum install -y wget && wget -O halo-cli.sh https://git.io/fxHqp && bash halo-cli.sh -i
-
-# upgrade Halo
-$ bash halo-cli.sh -u
-```
 
 Deploy with Docker：
 ```bash
@@ -66,6 +56,16 @@ $ yum install -y wget && wget -O docker-compose.yaml https://git.io/fpS8N
 
 # run
 $ docker-compose up -d
+```
+
+Deploy with shell script：
+
+```bash
+# install Halo
+$ yum install -y wget && wget -O halo-cli.sh https://git.io/fxHqp && bash halo-cli.sh -i
+
+# upgrade Halo
+$ bash halo-cli.sh -u
 ```
 
 > Tips: If you use Idea, Eclipse and other IDEs to run, you need to install the Lombok plugin, In addition, JDK10 is not supported at the moment, and there are problems with themes scanning and uploading.
