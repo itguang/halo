@@ -1,11 +1,11 @@
 FROM maven:3-jdk-8-alpine
-LABEL maintainer="Ryan Wang<i@ryanc.cc>"
+LABEL maintainer="guang<itguang@qq.com>"
 
 WORKDIR /opt/halo
 ADD . /tmp
 ENV TZ=Asia/Shanghai \
-DB_USER="admin" \
-DB_PASSWORD="123456"
+DB_USER="root" \
+DB_PASSWORD="root"
 
 RUN ln -snf /usr/share/zoneinfo/${TZ} /etc/localtime && echo ${TZ} > /etc/timezone
 
