@@ -19,7 +19,7 @@
 
 轻快，简洁，功能强大，使用 Java 开发的博客系统。
 
-> QQ 交流群: 162747721 | Telegram 交流群：[https://t.me/HaloBlog](https://t.me/HaloBlog) | Telegram 频道：[https://t.me/halo_dev](https://t.me/halo_dev) | [WeHalo 小程序](https://github.com/aquanlerou/WeHalo)。
+> QQ 交流群: [162747721](https://jq.qq.com/?_wv=1027&k=5YV6nk2) | Telegram 交流群：[https://t.me/HaloBlog](https://t.me/HaloBlog) | Telegram 频道：[https://t.me/halo_dev](https://t.me/halo_dev) | [WeHalo 小程序](https://github.com/aquanlerou/WeHalo)。
 
 ## 演示站点
 
@@ -28,16 +28,6 @@
 > 用户名：admin，密码：123456
 
 ## 快速开始
-
-服务器快速部署：
-
-```bash
-# 安装 Halo
-$ yum install -y wget && wget -O halo-cli.sh https://git.io/fxHqp && bash halo-cli.sh -i
-
-# 更新 Halo
-$ bash halo-cli.sh -u
-```
 
 Docker 部署：
 ```bash
@@ -66,6 +56,16 @@ $ yum install -y wget && wget -O docker-compose.yaml https://git.io/fpS8N
 
 # 运行
 $ docker-compose up -d
+```
+
+脚本部署（不推荐）：
+
+```bash
+# 安装 Halo
+$ yum install -y wget && wget -O halo-cli.sh https://git.io/fxHqp && bash halo-cli.sh -i
+
+# 更新 Halo
+$ bash halo-cli.sh -u
 ```
 
 > 注意：如使用 Idea，Eclipse 等IDE运行的话，需要安装Lombok插件，另外暂不支持JDK10，主题管理和主题上传会有问题。
