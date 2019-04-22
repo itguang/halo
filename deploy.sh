@@ -2,6 +2,7 @@
 
 # 指定Halo的根目录，请按实际修改
 HALO_DIR="/usr/local/halo"
+Out
 
 # 拉取最新的源码
 # git pull
@@ -10,7 +11,7 @@ HALO_DIR="/usr/local/halo"
 cd $HALO_DIR
 
 # 停止Halo
-sh $HALO_DIR/bin/halo.sh stop
+sh $HALO_DIR/target/dist/halo.sh stop
 
 # 执行打包
 mvn package -Pprod
