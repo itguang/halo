@@ -4,8 +4,9 @@
 HALO_DIR="."
 
 # 拉取最新的源码
-# git pull
-
+echo "正在拉取最新代码..."
+ git pull
+echo "代码已同步最新master分支"
 # 进入Halo根目录
 cd $HALO_DIR
 
