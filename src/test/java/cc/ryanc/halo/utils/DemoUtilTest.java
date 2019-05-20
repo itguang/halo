@@ -1,5 +1,6 @@
 package cc.ryanc.halo.utils;
 
+import cn.hutool.crypto.SecureUtil;
 import org.junit.Test;
 
 /**
@@ -14,4 +15,12 @@ public class DemoUtilTest {
     public void testZip(){
         //ZipUtils.unZip("/Users/ryan0up/Desktop/adminlog.html.zip","/Users/ryan0up/Desktop/");
     }
+
+    @Test
+    public void getpwd(){
+        System.out.println( SecureUtil.md5("maomao1210"));
+
+    }
+
+
 }

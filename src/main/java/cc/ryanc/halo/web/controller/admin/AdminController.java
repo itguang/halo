@@ -140,10 +140,16 @@ public class AdminController extends BaseController {
      * @return 模板路径admin/admin_login
      */
     @GetMapping(value = "/login")
-    public String login(HttpSession session) {
+    public String login(HttpSession session,Model model) {
         final User user = (User) session.getAttribute(USER_SESSION_KEY);
+
+        Map<String, String> allOptions = optionsService.findAllOptions();
+        String blog_title = optionsService.findOneOption("blog_title");
+
         //如果session存在，跳转到后台首页
         if (null != user) {
+            model.addAttribute("option",allOptions);
+            model.addAttribute("blog_title",blog_title);
             return "redirect:/admin";
         }
         return "admin/admin_login";
